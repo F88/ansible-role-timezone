@@ -1,0 +1,5 @@
+---
+
+- name: show notes
+  debug: var=notes
+
