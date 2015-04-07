@@ -1,0 +1,9 @@
+---
+
+- name: show notes
+  debug: var=notes
+
+- name: tzdata-update
+  shell: tzdata-update
+  when: ansible_distribution == 'CentOS'
+

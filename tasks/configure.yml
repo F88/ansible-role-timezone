@@ -1,0 +1,14 @@
+---
+
+- name: Update configuration file '/etc/sysconfig/clock'
+  lineinfile: dest={{ tz_conf }} state=present backup=yes regexp='ZONE=.*' line='ZONE="{{ zone | mandatory }}"'
+  notify:
+    - show notes
+    - tzdata-update
+
+- name: Set localtime '/etc/localtime'
+  file: src=/usr/share/zoneinfo/{{ zone | mandatory }} dest={{ tz_file }} state=link force=yes
+  notify:
+    - show notes
+    - tzdata-update
+

@@ -1,0 +1,6 @@
+---
+
+zone: UTC
+tz_conf: /etc/sysconfig/clock
+tz_file: /etc/localtime
+

@@ -1,0 +1,23 @@
+---
+galaxy_info:
+  author: Fx88
+  description: Ansible Role for confguring system clock and localtime
+  company:
+  issue_tracker_url: https://github.com/F88/ansible-role-timezone/issues
+  license: MIT
+  min_ansible_version: 1.8.4
+  platforms:
+    - name: CentOS
+      versions:
+        - 6
+    - name: Amazon
+      versions:
+        - 2014.12
+        - 2015.03
+#    - name: Ubuntu
+#      versions:
+#        - trusty
+  categories:
+    - system
+dependencies: []
+

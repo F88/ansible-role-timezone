@@ -1,0 +1,6 @@
+---
+
+- debug: var=ansible_distribution
+- include: setup.yml
+- include: configure.yml
+
