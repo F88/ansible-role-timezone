@@ -1,0 +1,12 @@
+---
+
+# tzdata-update
+
+- name: be sure latest 'tzdata' installed
+  yum: name=tzdata state=latest
+#  when: ansible_distribution != 'Amazon'
+
+- shell: tzdata-update
+#  when: ansible_distribution != 'Amazon'
+
+
