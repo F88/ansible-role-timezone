@@ -14,9 +14,9 @@ galaxy_info:
     - name: Amazon
       versions:
         - all
-    - name: Ubuntu
-      versions:
-        - trusty
+#    - name: Ubuntu
+#      versions:
+#        - trusty
   categories:
     - system
 dependencies: []
