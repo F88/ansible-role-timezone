@@ -2,7 +2,7 @@
 ansible-role-timezone
 =========
 
-[![Ansible Galaxy](http://img.shields.io/badge/galaxy-Fx88.timezone-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/3343)
+[![Ansible Galaxy](http://img.shields.io/badge/AnsibleGalaxy-Fx88.timezone-blue.svg?style=flat-square)](https://galaxy.ansible.com/list#/roles/3343)
 [![Tag](http://img.shields.io/github/tag/F88/ansible-role-timezone.svg?style=flat-square)](https://github.com/F88/ansible-role-timezone/releases/tag/v0.1)
 
 Role Name
