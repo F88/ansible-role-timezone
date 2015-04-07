@@ -1,5 +1,17 @@
 ---
 
+- name: Check current configuration
+  command: cat {{ tz_conf }}
+  changed_when: false
+  register: esc
+
+- name: Print current configuration
+  debug: var=esc.stdout_lines
+
+- name: be sure latest 'tzdata' installed
+  yum: name=tzdata state=latest
+  when: ansible_distribution == 'CentOS'
+
 - name: Check if selinux is installed
   command: getenforce
   register: command_result

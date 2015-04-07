@@ -1,11 +1,6 @@
 ---
 
 - debug: var=ansible_distribution
-
 - include: setup.yml
-
 - include: configure.yml
-
-- include: tzdata-update.yml
-  when: ansible_distribution != 'Amazon'
 
